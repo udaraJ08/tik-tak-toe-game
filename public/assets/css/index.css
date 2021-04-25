@@ -1,0 +1,49 @@
+body{
+    background-color: crimson;
+    background-image: linear-gradient(to right top, #2affff, #4cffef, #68ffde, #82ffce, #99ffbf);
+    background-attachment: fixed;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.mid-container{
+    width: 70%;
+    height: 80%;
+
+}
+
+.playground{
+
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.square{
+    width: 30.33%;
+    height: 30.33%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .playground{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .mid-container{
+        width: 100%;
+    }
+}
